@@ -220,17 +220,20 @@ nav .navLinks li a{
     }
     nav .navLinks{
         position: fixed;
-        top: 110px;
+        top: 0;
         right: -100%;
         left: auto;
         width: 100%;
         max-width: 100%;
-        height: calc(100vh - 110px);
+        height: 100vh;
         background-color: #222;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
         transition:0.5s;
-        padding: 25px 0px;
+        padding-top: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 25px;
         overflow-y: auto;
     }
     nav .navLinks li{
