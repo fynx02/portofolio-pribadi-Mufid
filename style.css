@@ -248,39 +248,69 @@ nav .navLinks li a{
 }
 @media(max-width:768px)
 {
+    .wrapper{
+        width: 100%;
+        padding: 0 15px;
+    }
+
     header{
-        padding: 30px 0 20px 0;
+        padding: 20px 0 15px 0;
+    }
+
+    .logo .logo-text{
+        font-size: 18px;
     }
 
     .container{
         flex-direction: column;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
+        gap: 20px;
     }
 
     .container .hero-pic{
-        width: 220px;
-        height: 220px;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
     }
 
     .hero-text{
-        padding: 30px 0px;
+        padding: 20px 0px;
         max-width: 100%;
+        width: 100%;
+    }
+
+    .hero-text h5{
+        font-size: 12px;
     }
 
     .hero-text h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 12px;
     }
 
     .hero-text p{
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 15px;
     }
 
     .btn-group{
         justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-group .btn{
+        padding: 10px 18px;
+        font-size: 14px;
     }
 
     .hero-text .social{
         justify-content: center;
+        margin-top: 15px;
+    }
+
+    .hero-text .social i{
+        font-size: 16px;
+        margin-right: 8px;
     }
 }
