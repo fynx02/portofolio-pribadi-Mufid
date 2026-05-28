@@ -219,17 +219,19 @@ nav .navLinks li a{
         top:0;
     }
     nav .navLinks{
-        position: absolute;
+        position: fixed;
         top: 110px;
         right: -100%;
-        bottom: 0;
-        width: 60%;
-        height: 100vh;
+        left: auto;
+        width: 100%;
+        max-width: 100%;
+        height: calc(100vh - 110px);
         background-color: #222;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
         transition:0.5s;
-        padding: 25px 0px
+        padding: 25px 0px;
+        overflow-y: auto;
     }
     nav .navLinks li{
         display: block;
@@ -246,12 +248,32 @@ nav .navLinks li a{
 }
 @media(max-width:768px)
 {
+    header{
+        padding: 30px 0 20px 0;
+    }
+
     .container{
         flex-direction: column;
-        padding-top: 2rem
+        padding-top: 1rem;
     }
+
+    .container .hero-pic{
+        width: 220px;
+        height: 220px;
+    }
+
     .hero-text{
-        padding: 40px 0px;
+        padding: 30px 0px;
+        max-width: 100%;
+    }
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
+    .hero-text p{
+        font-size: 14px;
+        line-height: 1.5;
     }
 
     .btn-group{
